@@ -9,7 +9,8 @@
     "strict": true,
     "sourceMap": false,
     "outDir": "./dist",
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "strictPropertyInitialization": false
   },
   "exclude": ["node_modules", "migration.ts"]
 }

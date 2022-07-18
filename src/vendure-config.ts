@@ -8,6 +8,7 @@ import { defaultEmailHandlers, EmailPlugin } from '@vendure/email-plugin';
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { TestPlugin } from './plugins/TestPlugin/test-plugin.plugin';
+import { ProductSeller } from './plugins/ProductSeller/entities/product-seller.entity';
 import path from 'path';
 
 export const config: VendureConfig = {
@@ -51,7 +52,6 @@ export const config: VendureConfig = {
     paymentOptions: {
         paymentMethodHandlers: [dummyPaymentHandler],
     },
-    customFields: {},
     plugins: [
         AssetServerPlugin.init({
             route: 'assets',
